@@ -50,7 +50,7 @@ jobs:
       - name: Copiar JSON al directorio público
         run: |
           mkdir -p public
-          cp scrap_prices.json public/
+          cp data_json/scrap_prices.json public/
           touch public/.nojekyll
 
       # 9. Publicar en GitHub Pages
