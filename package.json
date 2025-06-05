@@ -1,0 +1,10 @@
+{
+  "name": "scrap-metals-price-scraper",
+  "version": "1.0.0",
+  "dependencies": {
+    "puppeteer": "^24.9.0"
+  },
+  "scripts": {
+    "start": "node scripts/script_download_metals.js"
+  }
+}

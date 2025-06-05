@@ -1,0 +1,54 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VSCode & editor settings
+.vscode/
+.idea/
+*.swp
+
+# Data and HTML downloads
+data/
+!data/.gitkeep   # <-- si quieres mantener la carpeta vacía
+
+
+
+# Environment variables & secrets
+.env
+.env.*
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# GitHub Pages artifacts (solo si los genera local, no en Actions)
+gh-pages/
+
+# Test & coverage
+coverage/
+*.cover
+*.py,cover
+.hypothesis/
+
+# Misc
+*.log
+
+# Si tienes algún directorio temporal más, añádelo aquí
+

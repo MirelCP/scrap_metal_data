@@ -1,0 +1,63 @@
+name: Scrape Scrap Prices
+
+on:
+  schedule:
+    - cron: '0 0 * * *'         # Once per day at midnight UTC
+  workflow_dispatch:             # Manual trigger from Actions tab
+
+permissions:
+  contents: write                # Para que el bot pueda hacer push a gh-pages
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout del repositorio
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Entorno Node
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 3. Entorno Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      # 4. Dependencias Node (tu scraper)
+      - name: Install Node.js dependencies
+        run: npm install
+        working-directory: ./scripts
+
+      # 5. Dependencias Python
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      # 6. Descarga del HTML
+      - name: Download HTML (Node.js)
+        run: node scripts/script_download_metals.js
+
+      # 7. Extracción a JSON
+      - name: Extract JSON (Python)
+        run: python scripts/extract_json_metals.py
+
+      # 8. Copiar el JSON (y .nojekyll) a la carpeta pública  <<--- NUEVO
+      - name: Copiar JSON al directorio público
+        run: |
+          mkdir -p public
+          cp data_json/metals_futures.json public/
+          touch public/.nojekyll
+
+      # 9. Publicar en GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages          # rama de destino
+          publish_dir: ./public            # lo que se sube
+
