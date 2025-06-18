@@ -1,92 +1,92 @@
 {
-  "last_update": "2025-06-17T02:06:12.266838",
+  "last_update": "2025-06-18T02:05:09.248696",
   "source": "recycleinme.com",
   "source_url": "https://www.recycleinme.com/scrappricelisting/Us%20Scrap%20Prices",
   "prices": [
     {
-      "date": "2025-17-04",
+      "date": "2025-18-04",
       "material": "Aluminum Extrusion",
-      "price": 0.85,
+      "price": 0.87,
       "currency": "USD",
       "unit": "lb",
       "location": "US"
     },
     {
-      "date": "2025-17-04",
+      "date": "2025-18-04",
       "material": "Aluminum Sheet",
-      "price": 0.75,
+      "price": 0.77,
       "currency": "USD",
       "unit": "lb",
       "location": "US"
     },
     {
-      "date": "2025-17-04",
+      "date": "2025-18-04",
       "material": "Aluminum Wire",
-      "price": 0.6,
+      "price": 0.62,
       "currency": "USD",
       "unit": "lb",
       "location": "US"
     },
     {
-      "date": "2025-17-04",
+      "date": "2025-18-04",
       "material": "Aluminum-Copper Mix",
-      "price": 1.65,
+      "price": 1.66,
       "currency": "USD",
       "unit": "lb",
       "location": "US"
     },
     {
-      "date": "2025-17-04",
+      "date": "2025-18-04",
       "material": "Brass",
-      "price": 2.1,
+      "price": 2.11,
       "currency": "USD",
       "unit": "lb",
       "location": "US"
     },
     {
-      "date": "2025-17-04",
+      "date": "2025-18-04",
       "material": "Cast Aluminum",
-      "price": 0.75,
+      "price": 0.76,
       "currency": "USD",
       "unit": "lb",
       "location": "US"
     },
     {
-      "date": "2025-17-04",
+      "date": "2025-18-04",
       "material": "Copper #1",
-      "price": 3.4,
+      "price": 3.6,
       "currency": "USD",
       "unit": "lb",
       "location": "US"
     },
     {
-      "date": "2025-17-04",
+      "date": "2025-18-04",
       "material": "Copper #2",
-      "price": 3.0,
+      "price": 3.1,
       "currency": "USD",
       "unit": "lb",
       "location": "US"
     },
     {
-      "date": "2025-17-04",
+      "date": "2025-18-04",
       "material": "Copper Sheet",
-      "price": 2.85,
+      "price": 2.95,
       "currency": "USD",
       "unit": "lb",
       "location": "US"
     },
     {
-      "date": "2025-17-04",
+      "date": "2025-18-04",
       "material": "Shredded Steel",
-      "price": 385.0,
+      "price": 380.0,
       "currency": "USD",
       "unit": "ton",
       "location": "US"
     },
     {
-      "date": "2025-17-04",
+      "date": "2025-18-04",
       "material": "Stainless Steel",
-      "price": 0.62,
+      "price": 0.55,
       "currency": "USD",
       "unit": "lb",
       "location": "US"
